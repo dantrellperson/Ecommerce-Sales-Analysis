@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Takeaways</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+    <!-------------------------- NavBar Section Begin ------------------------------------------->
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Intro</a>
+            <a class="navbar-brand" href="Data_Cleaning.html">Data-Cleaning</a>
+            <a class="navbar-brand" href="Main_Takeaways.html">Takeaways</a>
+            <a class="navbar-brand" href="Recommendations.html">Recommendations</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Analysis
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="Problem_Statement.html">Problem Statement</a></li>
+                    <li><a class="dropdown-item" href="Impact.html">Impact</a></li>
+                    <li><a class="dropdown-item" href="Stakeholders.html">Stakeholders</a></li>
+                    <li><a class="dropdown-item" href="Scope.html">Scope</a></li>
+                    <li><a class="dropdown-item" href="Metrics.html">Metrics</a></li>
+                    <li><a class="dropdown-item" href="Tasks.html">Tasks</a></li>
+                    <li><a class="dropdown-item" href="Main_Takeaways.html">Takeaways</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    <!-------------------------- NavBar Section End ------------------------------------------->
+
+      <!--------------------------    Overall Body Begin      ------------------------------------------->
+    <div class="row g-2">
+      <p><mark><strong>Next:</strong></mark>
+        <a href="Recommendations.html"><button type="button" class="btn btn-primary btn-sm">Recommendations</button></a></p>
+      <!------------------------    Unit Price Begin------------------------------------------------->
+        <p class="h3">Takeaways</p>
+        <p class="h5">UnitPrice Analysis</p>
+        <ol>
+          <small><li>This "unique gift" supplier's money maker was overwhelmingly cheap items, with 92.3% of all items 
+            sold costing less than $5.00, accounting for 71.4% of total sales.</li>
+          <li>Medium priced items accounted for 7.7% of all items sold, and 27% of total sales.</li>
+          <li>High priced items accounted for less than 0.1% of all items sold, and 0.7% of total saless.</li>
+        </small></ol>
+      <!------------------------    Unit Price End------------------------------------------------->
+
+      <!------------------------    Sales Frequency Begin------------------------------------------------->
+        <p class="h5">Sales Frequency Analysis</p>
+        <ol>
+          <small><li>"Regular" selling items made 39.4% of total sales for this wholeseller. Items that include a design in 
+            the description are far and away the best selling created category</li>
+          <li>regular seller: 39.4% of total sales</li>
+          <li>best seller: 24.8% of total sales</li>
+          <li>hot: 17.3% of total sales</li>
+          <li>regular seller: 39.4% of total sales</li>
+          <li>warm: 17% of total sales</li></small></ol>
+      <!------------------------    Sales Frequency End------------------------------------------------->
+
+      <!------------------------    Categories Begin---------------------------------------------------->
+        <p class="h5">Category compared to TotalSales Analysis</p>
+        <ol>
+          <small><li>The below percentage shows each category compared to the rest of sales, multiple items meet more than 
+            one category so the % are not meant to add up to 100. The percentages are to show specific category type vs rest 
+            of inventory.</li>
+          <li>For example, "SET OF 5 RED PLATES" would fall into the sets category and the colors category.</li>
+          <li>Sets = 18.6% of total sales</li>
+          <li>Colors = 23.6% of total sales</li>
+          <li>Material = 16.6% of total sales</li>
+          <li>Design = 46% of total sales</li>
+          <li>Jewelry = 1.2% of total sales</li>
+          <li>Household = 32 % of total sales</li>
+          <li>MISC = 18% of total sales</li>
+        </small></ol>
+      <!------------------------    Categories End---------------------------------------------------->
+        <p class="h5">Main Takeaways</p>
+        <ol>
+          <small><li>"Regular" selling items made 39.4% of total sales for this wholeseller.</li>
+          <li>Items that include a design in the description are far and away the best selling created category. 
+            Second are items that include some indication of being for household(for person not business) in the description,
+             and Third items that include color in description.</li>
+          <li>This Gift Shop's money maker by Unit Price was overwhelmingly cheap items, with 92.3% of all items sold costing
+             less than $5.00, accounting for 71.4% of total sales.</li>
+          <li>Reduced the redunancy of stock code from x number to x number</li>
+        </small></ol>
+      <!----------------------    Carousel          ------------------------------------------->
+          <p class="h5"><strong>Visualizations </strong></p>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="Assets/images/Graphs/SETS_Sales.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p>Items that fall into the Design category accounts 46% of total sales</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="Assets/images/Graphs/Household_Sales.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p>Items that fall into the Household category accounts 32% of total sales</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/images/Graphs/Colors_Sales.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p>Items that fall into the Colors category accounts 23.6% of total sales</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/images/Graphs/SETS_Sales.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p>Items that fall into the Sets category accounts 18.6% of total sales</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/images/Graphs/Misc_Sales.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p>Items that fall into the MISC category accounts 18% of total sales</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/images/Graphs/Material_Sales.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p>Items that fall into the Material category accounts 16.6% of total sales</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/images/Graphs/Jewelry_Sales.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p>Items that fall into the Jewelry category account for 1.2% of total sales</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/images/Graphs/Sales by Sales_Frequency.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p>Overall Sales Frequency Categories vs Total Sales </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/images/Graphs/UnitPrice_Sales.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p>Unit Price Categories vs Total Sales </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <!--------------------------    Overall Body End          --------------------------------------------------------------------->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Metrics</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-------------------------- NavBar Section Begin ------------------------------------------->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Intro</a>
+        <a class="navbar-brand" href="Data_Cleaning.html">Data-Cleaning</a>
+        <a class="navbar-brand" href="Main_Takeaways.html">Takeaways</a>
+        <a class="navbar-brand" href="Recommendations.html">Recommendations</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Analysis
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="Problem_Statement.html">Problem Statement</a></li>
+                <li><a class="dropdown-item" href="Impact.html">Impact</a></li>
+                <li><a class="dropdown-item" href="Stakeholders.html">Stakeholders</a></li>
+                <li><a class="dropdown-item" href="Scope.html">Scope</a></li>
+                <li><a class="dropdown-item" href="Metrics.html">Metrics</a></li>
+                <li><a class="dropdown-item" href="Tasks.html">Tasks</a></li>
+                <li><a class="dropdown-item" href="Main_Takeaways.html">Takeaways</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <!-------------------------- NavBar Section End ------------------------------------------->
+
+      <!--------------------------    Body Begin      ------------------------------------------->
+      <div class="row g-2">
+        <p class="h5">Metrics (what is being tracked)</p>
+        <ul class="list-unstyled">
+          <small><li>Total Sales per stockcode</li>
+          <li>Total Quantity sold per stockcode</li>
+          <li>Total Sales per stockcode unit price</li>
+          <li>Total Sales by sales frequency</li>
+        </small></ul>
+        <p class="h5"> Added columns for analysis</p>
+        <li><strong><u> UnitPrice:</u></strong>
+          <ul>
+            <li>cheap = Less than $5.00</li>
+            <li>medium = More than $5.00, but less than $20.00</li>
+            <li>high = More than $20.00</li>
+          </ul>
+        </li>
+        <li><strong><u>Sales Frequency: </u></strong> 
+          <ul>
+            <li>Cold: items that sold less than 100 pieces</li>
+            <li>Warm: items that sold between 100 and 1,000 pieces</li>
+            <li>Regular seller: items that sold between 1,000 and 5,000 pieces</li>
+            <li>Hot: items that sold between 5,000 and 10,1000 pieces</li>
+            <li>Best Seller: items that sold more than 10,000 pieces</li>
+          </ul>
+        </li>
+        <p><mark><strong>Next:</strong></mark>
+          <a href="Tasks.html"><button type="button" class="btn btn-primary btn-sm">Tasks</button></a></p>
+    <!--------------------------    Body End          ------------------------------------------->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

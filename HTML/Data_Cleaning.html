@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Cleaning</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+    <!-------------------------- NavBar Section Begin ------------------------------------------->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Intro</a>
+            <a class="navbar-brand" href="Data_Cleaning.html">Data-Cleaning</a>
+            <a class="navbar-brand" href="Main_Takeaways.html">Takeaways</a>
+            <a class="navbar-brand" href="Recommendations.html">Recommendations</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Analysis
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="Problem_Statement.html">Problem Statement</a></li>
+                    <li><a class="dropdown-item" href="Impact.html">Impact</a></li>
+                    <li><a class="dropdown-item" href="Stakeholders.html">Stakeholders</a></li>
+                    <li><a class="dropdown-item" href="Scope.html">Scope</a></li>
+                    <li><a class="dropdown-item" href="Metrics.html">Metrics</a></li>
+                    <li><a class="dropdown-item" href="Tasks.html">Tasks</a></li>
+                    <li><a class="dropdown-item" href="Main_Takeaways.html">Takeaways</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    <!-------------------------- NavBar Section End ------------------------------------------->
+
+    <!--------------------------    Body Begin      ------------------------------------------->
+      <div class="row g-2">
+        <p class="h5">Cleaning Process:</p>
+
+        <p><mark><strong>Next:</strong></mark>
+            <a href="Impact.html"><button type="button" class="btn btn-primary btn-sm">Impact</button></a></p>
+
+        <ol>
+          <small><li>There were different price for some stock codes, however the data did not show any indications as to why. As a result, for the final clean inventory list the unit price was adjusted to be a mean of prices for these products</li>
+          <li>There were several miscellaneous stock codes included for things such as "broken packages", 
+            "missed", "return". The good descriptions, thankfully, for actual sales items had a trend of being in all caps, 
+            but there were some miscellaneous descriptions in all caps as well. To help with cleaning, an all lower case 
+            column was created so these unwanted descriptions were less likely to be missed. A handful of bad descriptions 
+            remain in data post cleaning as there was a wide variety of miscellaneous desctitions.</li>
+        </small></ol>
+        <p class="h6"> Stock Code Cleaning Process to return only sales items:</p>  
+          <ol>
+            <li>Create an all lower case column so unwanted descriptions are less likely to be mised</li>
+            <li>Create a list of found miscellaneous words and characters to filter out of data.</li>
+          </ol>
+        </li>
+        <p class="h6"> Category Creation Process:</p>  
+          <ol>
+            <li>The first step was to break every description down to just individual words, and then count the occurences of each unique word in this list.</li>
+            <li>Then a common word list was created from the words with more than 49 occurences.</li>
+            <li>These common words were used to base the categories off.</li>
+            <li>The categories are: SETS, Colors, Holidays, Material, Design, Jewelry, Vintage, Household</li>
+            <li>Lists were then created containing the words that inspired the categories. These lists were used to display 
+                True if a description contained a word in the list for the matching category.</li>
+            <li>After that, there was a column created to display True or False if the description contained a common word(words with more than 49 occurences).</li>
+            <li>Finally all True and False occurences were converted to (1) and (0) respectively to total for a sum. Sum is used to create MISC categroy for descriptions not falling into any category.</li>
+          </ol>
+        </li>
+          <small><p><strong>Snipet of clean data below: </strong></p></small>
+          <img src="Assets/images/Clean_Ecomm_Data.png" class="img-fluid" alt="...">
+<!--------------------------    Body End          ------------------------------------------->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -77,11 +77,11 @@ Legend:
 
 # How the code works:
 
-_The jupyter notebook titled "Ecommerce Sales Analysis Final Draft is the fine tuned version of my process:_
+_The jupyter notebook titled "Ecommerce Sales Analysis is the fine tuned version of my process:_
 
-I created a python package: inventory
+I created a python package: inventory, the functions in this package carry out of the cleaning process listed further down in this readme.
 
-Which contains the main function clean_sales_inventory
+The main created function is clean_sales_inventory
 
 clean_sales_inventory then contains three functions:
 
@@ -97,12 +97,12 @@ sales_by_stockCode: Supplied variables must be set to your clean sales by stock 
 
 1. There were several miscellaneous stock codes included for things such as "broken packages", "missed", "return". The good descriptions, thankfully, for actual sales items had a trend of being in all caps, but there were some miscellaneous descriptions in all caps as well. To help with cleaning, an all lower case column was created so these unwanted descriptions were less likely to be missed. A handful of bad descriptions remain in data post cleaning as there was a wide variety of miscellaneous desctitions.
 
-**Stock Code Cleaning Process to return only sales items:**
+## **Stock Code Cleaning Process to return only sales items:**
 
 1. Create an all lower case column so unwanted descriptions are less likely to be mised
 1. Create a list of found miscellaneous words and characters to filter out of data.
 
-**Category Creation Process:**
+## **Category Creation Process:**
 
 1. The first step was to break every description down to just individual words, and then count the occurences of each unique word in this list.
 1. Then a common word list was created from the words with more than 49 occurences.
@@ -114,6 +114,8 @@ sales_by_stockCode: Supplied variables must be set to your clean sales by stock 
 1. Finally all True and False occurences were converted to (1) and (0) respectively to total for a sum. Sum is used to create MISC categroy for descriptions not falling into any category.
 
 # Recommendations and Next steps
+
+---
 
 1. Conduct a survey with Sales team to determine product categories to improve product recommendations to wholesale customer.
 1. Implement code into current softwares to automate graphs for results for sales team (e.g. tableau dashboard)

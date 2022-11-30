@@ -63,7 +63,7 @@ For example, "SET OF 5 RED PLATES" would fall into the sets category and the col
 - Household = 32 % of total sales
 - MISC = 18% of total sales
 
-## Sales Frequency Analysis
+### Sales Frequency Analysis
 
 ---
 
@@ -114,7 +114,7 @@ inventory_list: cleans inputed csv file, transform data into unique list of stoc
 
 sales_by_stockCode: Supplied variables must be set to your clean sales by stock code csv path and your clean inventory list csv path
 
-# Cleaning Process:
+## Cleaning Process:
 
 ---
 
@@ -122,12 +122,12 @@ sales_by_stockCode: Supplied variables must be set to your clean sales by stock 
 
 1. There were several miscellaneous stock codes included for things such as "broken packages", "missed", "return". The good descriptions, thankfully, for actual sales items had a trend of being in all caps, but there were some miscellaneous descriptions in all caps as well. To help with cleaning, an all lower case column was created so these unwanted descriptions were less likely to be missed. A handful of bad descriptions remain in data post cleaning as there was a wide variety of miscellaneous desctitions.
 
-## **Stock Code Cleaning Process to return only sales items:**
+### **Stock Code Cleaning Process to return only sales items:**
 
 1. Create an all lower case column so unwanted descriptions are less likely to be mised
 1. Create a list of found miscellaneous words and characters to filter out of data.
 
-## **Category Creation Process:**
+### **Category Creation Process:**
 
 1. The first step was to break every description down to just individual words, and then count the occurences of each unique word in this list.
 1. Then a common word list was created from the words with more than 49 occurences.

@@ -26,12 +26,12 @@ Company that mainly sells unique all-occasion gifts. Many customers of the compa
 - Based on sales performance shown by analysis, Supply Chain/Operations department can more easily forecast which quantities of items should be ordered from factory partner.
 
 ## Scope (system's used):
---
+---
 
 Python/Jupyter, HTML/CSS, Excel
 
 ## Metrics
---
+---
 
 ### Overall UnitPrice Analysis
 

@@ -14,14 +14,20 @@ Company that mainly sells unique all-occasion gifts. Many customers of the compa
 
 ## Problem Statement:
 
+---
+
 **The overall goal was to create categories for stock codes to fall into based on their description, price range, and sales frequency. Then find trends for created categories based on sales.**
 
 ### What Business Impact does this have?/ What is the Business Value?
+
+---
 
 - This analysis will help Sales team make data backed decisions like: "Based on previous sales, Which item categories should be pitched as our best sellers to wholesales partners to encourage them bulk order?", Can provide Sales team with an overview of how similarly categorized and priced items in inventory performed by organizing stock codes into category buckets.
 - Based on sales performance shown by analysis, Supply Chain/Operations department can more easily forecast which quantities of items should be ordered from factory partner.
 
 # Main Takeaways
+
+---
 
 1. "Regular" selling items made 39.4% of total sales for this wholeseller.
 
@@ -32,6 +38,8 @@ Company that mainly sells unique all-occasion gifts. Many customers of the compa
 1. Reduced the redunancy of stock code from x number to x number
 
 ### Overall UnitPrice Analysis
+
+---
 
 - cheap = Less than \\$5.00
 - medium = More than \\$5.00, but less than \\$20.00
@@ -44,6 +52,8 @@ Medium priced items accounted for 7.7\% of all items sold, and 27\% of total sal
 High priced items accounted for less than 0.1\% of all items sold, and 0.7\% of total saless.
 
 ### Category compared to TotalSales Analysis
+
+---
 
 The below percentage shows each category compared to the rest of sales, multiple items meet more than one category so the % are not meant to add up to 100. The percentages are to show specific category type vs rest of inventory.
 
@@ -58,6 +68,8 @@ For example, "SET OF 5 RED PLATES" would fall into the sets category and the col
 - MISC = 18% of total sales
 
 ## Sales Frequency Analysis
+
+---
 
 Legend:
 
@@ -77,6 +89,8 @@ Legend:
 
 # How the code works:
 
+---
+
 _The jupyter notebook titled "Ecommerce Sales Analysis is the fine tuned version of my process:_
 
 I created a python package: inventory, the functions in this package carry out of the cleaning process listed further down in this readme.
@@ -91,7 +105,9 @@ inventory_list: cleans inputed csv file, transform data into unique list of stoc
 
 sales_by_stockCode: Supplied variables must be set to your clean sales by stock code csv path and your clean inventory list csv path
 
-## Initial Cleaning Process:
+# Cleaning Process:
+
+---
 
 1. There were different price for some stock codes, however the data did not show any indications as to why. As a result, for the final clean inventory list the unit price was adjusted to be a mean of prices for these products
 

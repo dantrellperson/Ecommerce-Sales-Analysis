@@ -18,24 +18,20 @@ Company that mainly sells unique all-occasion gifts. Many customers of the compa
 
 **The overall goal was to create categories for stock codes to fall into based on their description, price range, and sales frequency. Then find trends for created categories based on sales.**
 
-### What Business Impact does this have?/ What is the Business Value?
+## What Business Impact does this have?/ What is the Business Value?
 
 ---
 
 - This analysis will help Sales team make data backed decisions like: "Based on previous sales, Which item categories should be pitched as our best sellers to wholesales partners to encourage them bulk order?", Can provide Sales team with an overview of how similarly categorized and priced items in inventory performed by organizing stock codes into category buckets.
 - Based on sales performance shown by analysis, Supply Chain/Operations department can more easily forecast which quantities of items should be ordered from factory partner.
 
-# Main Takeaways
+## Scope (system's used):
+--
 
----
+Python/Jupyter, HTML/CSS, Excel
 
-1. "Regular" selling items made 39.4% of total sales for this wholeseller.
-
-1. Items that include a design in the description are far and away the best selling created category. Second are items that include some indication of being for household(for person not business) in the description, and Third items that include color in description.
-
-1. This Gift Shop's money maker by Unit Price was overwhelmingly cheap items, with 92.3% of all items sold costing less than \\$5.00, accounting for 71.4\% of total sales.
-
-1. Reduced the redunancy of stock code from x number to x number
+## Metrics
+--
 
 ### Overall UnitPrice Analysis
 
@@ -86,6 +82,19 @@ Legend:
 - hot: 17.3%
 - reg_seller: 39.4%
 - warm: 17%
+
+# Main Takeaways
+
+---
+
+1. "Regular" selling items made 39.4% of total sales for this wholeseller.
+
+1. Items that include a design in the description are far and away the best selling created category. Second are items that include some indication of being for household(for person not business) in the description, and Third items that include color in description.
+
+1. This Gift Shop's money maker by Unit Price was overwhelmingly cheap items, with 92.3% of all items sold costing less than \\$5.00, accounting for 71.4\% of total sales.
+
+1. Reduced the redunancy of stock code from x number to x number
+
 
 # How the code works:
 

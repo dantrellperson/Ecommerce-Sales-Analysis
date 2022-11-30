@@ -1,7 +1,10 @@
 ![Credit Card Stock Image](Assets/images/Banner-for-readme.png)
 
 # E-commerce sales data (from an actual UK retailer) Analysis.
---------------------------------------------------------------------
+
+---
+
+I have created a process to reduce 1 weeks worth of data cleaning down to 5 mins
 
 ### Data Description:
 
@@ -17,7 +20,6 @@ Company that mainly sells unique all-occasion gifts. Many customers of the compa
 
 - This analysis will help Sales team make data backed decisions like: "Based on previous sales, Which item categories should be pitched as our best sellers to wholesales partners to encourage them bulk order?", Can provide Sales team with an overview of how similarly categorized and priced items in inventory performed by organizing stock codes into category buckets.
 - Based on sales performance shown by analysis, Supply Chain/Operations department can more easily forecast which quantities of items should be ordered from factory partner.
-
 
 # Main Takeaways
 
@@ -73,7 +75,23 @@ Legend:
 - reg_seller: 39.4%
 - warm: 17%
 
-## Cleaning Process:
+# How the code works:
+
+_The jupyter notebook titled "Ecommerce Sales Analysis Final Draft is the fine tuned version of my process:_
+
+I created a python package: inventory
+
+Which contains the main function clean_sales_inventory
+
+clean_sales_inventory then contains three functions:
+
+inventory_list, sales_by_stockCode, actual_sales_inventory
+
+inventory_list: cleans inputed csv file, transform data into unique list of stockcodes with total quantity based on totalings the amounts shipped on each invoice, and then exports actual_inventory.csv to Output_Data folder. You must provide csv path to original Ecommerce Sales Data, must contain a StockCode and Description column to work
+
+sales_by_stockCode: Supplied variables must be set to your clean sales by stock code csv path and your clean inventory list csv path
+
+## Initial Cleaning Process:
 
 1. There were different price for some stock codes, however the data did not show any indications as to why. As a result, for the final clean inventory list the unit price was adjusted to be a mean of prices for these products
 

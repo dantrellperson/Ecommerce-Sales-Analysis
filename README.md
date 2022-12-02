@@ -60,17 +60,40 @@ For example, "SET OF 5 RED PLATES" would fall into the sets category and the col
 - SETS = 18.6% of total sales
 
 - Colors = 23.6% of total sales
-  ![Colors](Output_Data/Images/SETS_Sales.png)
+
+---
+
+![Colors](Output_Data/Images/SETS_Sales.png)
+
 - Material = 16.6% of total sales
-  ![Material](Output_Data/Images/Material_Sales.png)
+
+---
+
+![Material](Output_Data/Images/Material_Sales.png)
+
 - Design = 46% of total sales
-  ![Design](Output_Data/Images/Design_Sales.png)
+
+---
+
+![Design](Output_Data/Images/Design_Sales.png)
+
 - Jewelry = 1.2% of total sales
-  ![Jewelry](Output_Data/Images/Jewelry_Sales.png)
+
+---
+
+![Jewelry](Output_Data/Images/Jewelry_Sales.png)
+
 - Household = 32 % of total sales
-  ![Household](Output_Data/Images/Household_Sales.png)
+
+---
+
+![Household](Output_Data/Images/Household_Sales.png)
+
 - MISC = 18% of total sales
-  ![MISC](Output_Data/Images/Misc_Sales.png)
+
+---
+
+![MISC](Output_Data/Images/Misc_Sales.png)
 
 ### Sales Frequency Analysis
 

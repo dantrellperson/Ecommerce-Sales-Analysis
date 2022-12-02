@@ -43,7 +43,7 @@ Python/Jupyter, HTML/CSS, Excel
 - medium = More than \\$5.00, but less than \\$20.00
 - high = More than \\$20.00
 
-![Unit Price](Output_Data/images/UnitPrice_Sales.png)
+![Unit Price](Output_Data/Images/UnitPrice_Sales.png)
 
 ![Unit QTY](Output_Data/Images/qtyDistributionPerUnitPice_Sales.png)
 

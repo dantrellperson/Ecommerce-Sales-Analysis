@@ -26,11 +26,13 @@ Company that mainly sells unique all-occasion gifts. Many customers of the compa
 - Based on sales performance shown by analysis, Supply Chain/Operations department can more easily forecast which quantities of items should be ordered from factory partner.
 
 ## Scope (system's used):
+
 ---
 
 Python/Jupyter, HTML/CSS, Excel
 
 ## Metrics
+
 ---
 
 ### Overall UnitPrice Analysis
@@ -56,12 +58,19 @@ The below percentage shows each category compared to the rest of sales, multiple
 For example, "SET OF 5 RED PLATES" would fall into the sets category and the colors category.
 
 - SETS = 18.6% of total sales
+
 - Colors = 23.6% of total sales
+  ![Colors](Output_Data/Images/SETS_Sales.png)
 - Material = 16.6% of total sales
+  ![Material](Output_Data/Images/Material_Sales.png)
 - Design = 46% of total sales
+  ![Design](Output_Data/Images/Design_Sales.png)
 - Jewelry = 1.2% of total sales
+  ![Jewelry](Output_Data/Images/Jewelry_Sales.png)
 - Household = 32 % of total sales
+  ![Household](Output_Data/Images/Household_Sales.png)
 - MISC = 18% of total sales
+  ![MISC](Output_Data/Images/Misc_Sales.png)
 
 ### Sales Frequency Analysis
 
@@ -94,7 +103,6 @@ Legend:
 1. This Gift Shop's money maker by Unit Price was overwhelmingly cheap items, with 92.3% of all items sold costing less than \\$5.00, accounting for 71.4\% of total sales.
 
 1. Reduced the redunancy of stock code from x number to x number
-
 
 # How the code works:
 

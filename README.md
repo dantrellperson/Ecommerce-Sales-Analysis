@@ -43,6 +43,10 @@ Python/Jupyter, HTML/CSS, Excel
 - medium = More than \\$5.00, but less than \\$20.00
 - high = More than \\$20.00
 
+![Unit Price](Output_Data/images/UnitPrice_Sales.png)
+
+![Unit QTY](Output_Data/Images/qtyDistributionPerUnitPice_Sales.png)
+
 This Gift Shop's money maker was overwhelmingly cheap items, with 92.3% of all items sold costing less than \\$5.00, accounting for 71.4\% of total sales.
 
 Medium priced items accounted for 7.7\% of all items sold, and 27\% of total sales.
@@ -113,6 +117,8 @@ Legend:
 
 "Regular" selling items made 39.4% of total sales for this wholeseller. Items that include a design in the description are far and away the best selling created category
 
+![Sales Frequency](Output_Data/Images/Sales by Sales_Frequency.png)
+
 - best_seller: 24.8%
 - cold: 1.5%
 - hot: 17.3%
@@ -143,11 +149,22 @@ The main created function is clean_sales_inventory
 
 clean_sales_inventory then contains three functions:
 
-inventory_list, sales_by_stockCode, actual_sales_inventory
+inventory_list(), sales_by_stockCode(), actual_sales_inventory()
 
-inventory_list: cleans inputed csv file, transform data into unique list of stockcodes with total quantity based on totalings the amounts shipped on each invoice, and then exports actual_inventory.csv to Output_Data folder. You must provide csv path to original Ecommerce Sales Data, must contain a StockCode and Description column to work
+*inventory_list():*
+---
 
-sales_by_stockCode: Supplied variables must be set to your clean sales by stock code csv path and your clean inventory list csv path
+will ask you for csv file path, mine for this project exists in "Resources/data.csv", **csv must contain a StockCode and Description column to work**. Creats category columns(SETS, Colors, Material, Design, Jewelry, Household, MISC). Function then goes through each description, and places a (1) in the cateory column(s) for each unique stock code if the stock code's description meets the requirements for that column. inventory_list()
+
+*sales_by_stockCode():* 
+---
+
+will ask you for csv file path, mine for this project exists in "Resources/data.csv", **csv must contain a StockCode and Description column to work**. Function then cleans inputed csv file, transforms data into unique list of stockcodes and creates, total sales, total quantity based on totalings the amounts shipped on each invoice, and keeps unit price column. Then exports a csv "Output_Data/sales_by_stockCode.csv"
+
+*actual_sales_inventory():* 
+---
+
+will ask you to supply csv file paths. Supplied paths must be set to your clean sales by stock code csv path and your clean inventory list csv path. This function then creates and returns your overall sales inventory dataframe. Which will have sales by stock code and category columns. This dataframe will also include Description, Price_Category, & Sales_Frequency columns. 
 
 ## Cleaning Process:
 

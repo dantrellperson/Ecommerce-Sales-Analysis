@@ -122,8 +122,8 @@ Legend:
 - hot: 17.3%
 - reg_seller: 39.4%
 - warm: 17%
-
-![Sales Frequency](Output_Data/Images/Sales by Sales_Frequency.png)
+- 
+![Sales Frequency](Output_Data/Images/Sales-by-Sales_Frequency.png)
 
 # Main Takeaways
 

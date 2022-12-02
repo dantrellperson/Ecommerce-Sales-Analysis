@@ -115,15 +115,15 @@ Legend:
 - reg_seller: items that sold between 1,000 and 5,000 pieces
 - warm: items that sold between 100 and 1,000 pieces
 
-"Regular" selling items made 39.4% of total sales for this wholeseller. Items that include a design in the description are far and away the best selling created category
-
-![Sales Frequency](Output_Data/Images/Sales by Sales_Frequency.png)
+**Regular selling** items made 39.4% of total sales for this wholeseller. Items that include a design in the description are far and away the best selling created category
 
 - best_seller: 24.8%
 - cold: 1.5%
 - hot: 17.3%
 - reg_seller: 39.4%
 - warm: 17%
+
+![Sales Frequency](Output_Data/Images/Sales by Sales_Frequency.png)
 
 # Main Takeaways
 

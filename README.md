@@ -59,11 +59,15 @@ For example, "SET OF 5 RED PLATES" would fall into the sets category and the col
 
 - SETS = 18.6% of total sales
 
+---
+
+![SETS](Output_Data/Images/SETS_Sales.png)
+
 - Colors = 23.6% of total sales
 
 ---
 
-![Colors](Output_Data/Images/SETS_Sales.png)
+![Colors](Output_Data/Images/Colors_Sales.png)
 
 - Material = 16.6% of total sales
 

@@ -1,42 +1,37 @@
 ![Credit Card Stock Image](Assets/images/Banner-for-readme.png)
 
 # E-commerce sales data (from an actual UK retailer) Analysis.
-
 ---
 
-I have created a process to reduce 1 weeks worth of data cleaning down to 5 mins
+I have created a process to reduce 1 weeks worth of data cleaning down to minutes
 
-### Data Description:
+*Data Description:*
+---
 
 Company that mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. All the transactions occurring between 01/12/2010 and 09/12/2011
 
 #### Source: <!--'E-Commerce Transactions from actual UK Retailer --> https://www.kaggle.com/datasets/carrie1/ecommerce-data
 
-## Problem Statement:
-
+*Problem Statement:*
 ---
 
 **The overall goal was to create categories for stock codes to fall into based on their description, price range, and sales frequency. Then find trends for created categories based on sales.**
 
-## What Business Impact does this have?/ What is the Business Value?
-
+*What Business Impact does this have?/ What is the Business Value?*
 ---
 
 - This analysis will help Sales team make data backed decisions like: "Based on previous sales, Which item categories should be pitched as our best sellers to wholesales partners to encourage them bulk order?", Can provide Sales team with an overview of how similarly categorized and priced items in inventory performed by organizing stock codes into category buckets.
 - Based on sales performance shown by analysis, Supply Chain/Operations department can more easily forecast which quantities of items should be ordered from factory partner.
 
-## Scope (system's used):
-
+*Scope (system's used):*
 ---
 
 Python/Jupyter, HTML/CSS, Excel
 
-## Metrics
-
+## Metrics:
 ---
 
-### Overall UnitPrice Analysis
-
+*Overall UnitPrice Analysis*
 ---
 
 - cheap = Less than \\$5.00
@@ -53,8 +48,7 @@ Medium priced items accounted for 7.7\% of all items sold, and 27\% of total sal
 
 High priced items accounted for less than 0.1\% of all items sold, and 0.7\% of total saless.
 
-### Category compared to TotalSales Analysis
-
+*Category compared to TotalSales Analysis*
 ---
 
 The below percentage shows each category compared to the rest of sales, multiple items meet more than one category so the % are not meant to add up to 100. The percentages are to show specific category type vs rest of inventory.
